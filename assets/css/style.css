@@ -79,7 +79,7 @@ body {
 
 /* Logo itself */
 .inline-logo {
-  height: 1000px;
+  height: 750px;
   vertical-align: middle;
   transition: all 0.2s ease;
 }
