@@ -88,6 +88,10 @@ body {
   vertical-align: -0.12em;
   display: inline-block;
 }
+
+.google-wordmark {
+  transform: translateY(0.05em);
+}
 /* Brand links */
 .brand-link {
   position: relative;
