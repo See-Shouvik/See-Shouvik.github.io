@@ -82,21 +82,11 @@ body {
 }
 
 /* Logo itself */
-.logo-inline {
-  display: inline-block;
-  height: 1em;
-  vertical-align: baseline;
-}
-
-.logo-inline svg {
+.inline-logo {
   height: 1em;
   width: auto;
-  display: block;
-}
-
-/* tiny optical nudge for wordmarks */
-.google-wordmark svg {
-  transform: translateY(0.08em);
+  vertical-align: -0.12em;
+  display: inline-block;
 }
 /* Brand links */
 .brand-link {
