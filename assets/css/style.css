@@ -90,7 +90,7 @@ body {
 }
 
 .google-wordmark {
-  transform: translateY(0.05em);
+  transform: translateY(0.05em) scale(1.18);
 }
 /* Brand links */
 .brand-link {
