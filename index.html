@@ -70,19 +70,5 @@ and let the
 speak to ya.
   </p>
 </main>
-<script>
-  document.querySelectorAll('.inline-logo').forEach(logo => {
-    const black = logo.src;
-    const color = logo.dataset.color;
-
-    logo.addEventListener('mouseenter', () => {
-      logo.src = color;
-    });
-
-    logo.addEventListener('mouseleave', () => {
-      logo.src = black;
-    });
-  });
-</script>
 </body>
 </html>
