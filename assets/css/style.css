@@ -82,16 +82,11 @@ body {
 }
 
 /* Logo itself */
-.logo-inline {
-  display: inline-block;
-  vertical-align: baseline;
-}
-
 .inline-logo {
-  height: 1em;
+  height: 1em;               /* exactly matches text size */
   width: auto;
-  vertical-align: -0.15em; /* optical alignment tweak */
-  transition: all 0.2s ease;
+  vertical-align: -0.12em;   /* optical baseline correction */
+  transition: opacity 0.2s ease;
 }
 /* Brand links */
 .brand-link {
