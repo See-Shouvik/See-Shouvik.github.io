@@ -82,11 +82,21 @@ body {
 }
 
 /* Logo itself */
-.inline-logo {
-  height: 1.25em;          /* compensate for SVG whitespace */
+.logo-inline {
+  display: inline-block;
+  height: 1em;
+  vertical-align: baseline;
+}
+
+.logo-inline svg {
+  height: 1em;
   width: auto;
-  vertical-align: -0.18em; /* optical baseline correction */
-  transition: opacity 0.2s ease;
+  display: block;
+}
+
+/* tiny optical nudge for wordmarks */
+.google-wordmark svg {
+  transform: translateY(0.08em);
 }
 /* Brand links */
 .brand-link {
