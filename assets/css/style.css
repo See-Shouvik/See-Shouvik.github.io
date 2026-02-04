@@ -95,6 +95,9 @@ body {
 .google-wordmark {
   transform: translateY(0.05em) scale(1.5);
 }
+.hopper-wordmark {
+  transform: translateY(0.04em) scale(1.5);
+}
 /* Brand links */
 .brand-link {
   position: relative;
