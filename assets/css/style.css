@@ -75,6 +75,8 @@ body {
 
   font-size: inherit;
   line-height: inherit;
+
+   margin: 0 0.35em;
 }
 
 .logo-link:hover {
@@ -91,7 +93,7 @@ body {
 }
 
 .google-wordmark {
-  transform: translateY(0.05em) scale(1.25);
+  transform: translateY(0.05em) scale(1.5);
 }
 /* Brand links */
 .brand-link {
