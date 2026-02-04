@@ -83,15 +83,16 @@ body {
 
 /* Logo itself */
 .logo-inline {
-  display: inline-block;
-  height: 1em;
-  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  height: 1.1cap;
 }
 
 .inline-logo {
   height: 100%;
   width: auto;
   display: block;
+  transition: all 0.2s ease;
 }
 /* Brand links */
 .brand-link {
