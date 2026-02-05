@@ -100,7 +100,7 @@ body {
 }
 /* Rockstar optical tweaks */
 .rockstar-mark {
-  height: 1.3em;                 /* Rockstar needs presence */
+  height: 1.5em;                 /* Rockstar needs presence */
   transform: translateY(0.06em); /* baseline alignment */
 }
 /* Brand links */
