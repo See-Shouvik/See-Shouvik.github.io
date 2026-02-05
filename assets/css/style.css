@@ -107,6 +107,9 @@ body {
   height: 1.5em;          /* tweak as needed */
   vertical-align: -0.1em; /* optical alignment */
 }
+.philadelphia-mark {
+  transform: translateY(0.03em) scale(1.5);
+}
 /* Brand links */
 .brand-link {
   position: relative;
