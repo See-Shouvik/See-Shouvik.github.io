@@ -103,6 +103,10 @@ body {
   height: 1.5em;                 /* Rockstar needs presence */
   transform: translateY(0.06em); /* baseline alignment */
 }
+.kraft-mark {
+  height: 1.5em;          /* tweak as needed */
+  vertical-align: -0.1em; /* optical alignment */
+}
 /* Brand links */
 .brand-link {
   position: relative;
