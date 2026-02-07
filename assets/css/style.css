@@ -124,7 +124,7 @@ body {
 }
 .after-logo-punct{
   display: inline-block;
-  margin-left: 0.55em;  /* increase/decrease until it clears the logo */
+  margin-left: 1.55em;  /* increase/decrease until it clears the logo */
 }
 
 /* Brand links */
