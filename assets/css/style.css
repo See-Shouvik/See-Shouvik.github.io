@@ -162,3 +162,76 @@ body {
 .inline-text-link:hover {
   text-decoration: underline;
 }
+
+/* =========================
+   WORK PAGE (logos only)
+   ========================= */
+
+.work {
+  /* same top spacing logic as .home, but centered for a grid */
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 140px 24px 40px;
+}
+
+/* container from work.html */
+.work-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 48px 56px; /* row gap, column gap */
+}
+
+/* on the work page, don't show the underline border on hover */
+.work .logo-link,
+.work .logo-link:hover {
+  border-bottom: none;
+}
+
+/* make each logo feel like a tile without adding boxes */
+.work .logo-link {
+  margin: 0;                /* override your inline margins */
+  padding: 8px 10px;        /* gives breathing room + nicer hover */
+  line-height: 1;           /* prevents weird vertical spacing */
+}
+
+/* consistent sizing for work grid logos */
+.work .inline-logo {
+  height: 52px;             /* main dial: make bigger/smaller */
+  vertical-align: middle;
+  margin: 0;                /* override inline margins */
+}
+
+/* Keep your optical tweaks, but adapt them for grid sizing */
+.work .google-wordmark { transform: translateY(0.05em) scale(1.05); }
+.work .hopper-wordmark { transform: translateY(0.04em) scale(1.05); }
+.work .philadelphia-mark { transform: translateY(0.03em) scale(1.05); }
+
+/* PNG marks: keep a little extra presence */
+.work .rockstar-mark { height: 60px; transform: translateY(0.06em); }
+.work .kraft-mark { height: 60px; vertical-align: middle; }
+
+/* Movember: don’t use the paragraph punctuation hack on work grid */
+.work .movember-link { margin: 0; }
+.work .movember-link .movember-mark {
+  margin: 0;
+  transform: translateY(-0.10em) scale(1.0); /* grid size already handled by height */
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .work-logos {
+    gap: 28px 32px;
+  }
+
+  .work .inline-logo {
+    height: 42px;
+  }
+
+  .work .rockstar-mark,
+  .work .kraft-mark {
+    height: 48px;
+  }
+}
