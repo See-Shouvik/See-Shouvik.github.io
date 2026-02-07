@@ -111,19 +111,17 @@ body {
   transform: translateY(0.03em) scale(1.5);
 }
 
-/* tighten spacing just for Movember */
-.movember-link {
-  margin: 0 0.10em;     /* was 0.35em globally */
-  padding-right: 0.14em; /* reserves space so the period isn't covered */
+/* Movember-only spacing + alignment */
+.movember-link{
+  margin: 0 0.10em;              /* keep it tight */
 }
 
-.movember-link .movember-mark {
-  margin: 0; /* cancel inline-logo's 0.18em margin just for this one */
-  transform: translateX(-0.12em) translateY(0.10em) scale(2.8);
+.movember-link .movember-mark{
+  margin: 0 0.45em 0 0;          /* <-- this is what saves the period */
+  transform: translateY(-0.10em) scale(2.8);  /* <-- move up a bit */
   transform-origin: left center;
+  vertical-align: baseline;      /* helps keep it predictable */
 }
-
-
 
 /* Brand links */
 .brand-link {
