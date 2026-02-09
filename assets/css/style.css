@@ -92,30 +92,48 @@ body {
   margin: 0 0.18em;
 }
 
-/* --- Award: D&AD Yellow Pencil (behind logos) --- */
+/* --- Award: D&AD Yellow Pencil --- */
+/* Put the class on the WRAPPER (the <a class="logo-link award-dnad"> … ), not the <img> */
 .award-dnad{
-  position: relative; /* anchor the pencil */
+  position: relative;
+  display: inline-block;
+  --pencil-size: 2.2em;
+  --pencil-left: 70%;
+  --pencil-top: 50%;
+  --pencil-transform: translate(-50%, -50%);
 }
 
 .award-dnad::after{
   content: "";
   position: absolute;
-  left: 70%;                 /* pencil sits slightly to the right */
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 2.2em;              /* size relative to text/logo */
-  height: 2.2em;
+  left: var(--pencil-left);
+  top: var(--pencil-top);
+  transform: var(--pencil-transform);
+  width: var(--pencil-size);
+  height: var(--pencil-size);
   background: url("../images/dnad-yellow-pencil.png") no-repeat center / contain;
-  z-index: 0;                /* behind the logo */
+  z-index: 0;
   pointer-events: none;
 }
 
-/* make sure the actual logo stays above the pencil */
-.award-dnad .inline-logo{
+/* keep whatever is inside above the pencil */
+.award-dnad > *{
   position: relative;
   z-index: 1;
 }
 
+/* Index/Home: bigger + more to the right (behind the “e”) */
+.home .award-dnad{
+  --pencil-size: 3.3em;  /* ~1.5x from 2.2em */
+  --pencil-left: 88%;
+}
+
+/* Work grid: size pencil relative to the big pixel logos */
+.work .award-dnad{
+  --pencil-size: 120px;  /* adjust if needed */
+  --pencil-left: 78%;
+  --pencil-top: 52%;
+}
 
 .google-wordmark {
   transform: translateY(0.05em) scale(1.5);
@@ -151,16 +169,6 @@ body {
   display: inline-block;
   margin-left: 1.65em;  /* increase/decrease until it clears the logo */
 }
-
-/* Award next to project title (project pages) */
-.project-title.award-dnad::after{
-  left: 105%;                /* push it to the right of the title text */
-  top: 55%;
-  width: 0.95em;             /* smaller than inline pencil */
-  height: 0.95em;
-  transform: translate(0, -50%);
-}
-
 
 /* Brand links */
 .brand-link {
