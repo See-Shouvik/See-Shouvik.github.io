@@ -92,6 +92,31 @@ body {
   margin: 0 0.18em;
 }
 
+/* --- Award: D&AD Yellow Pencil (behind logos) --- */
+.award-dnad{
+  position: relative; /* anchor the pencil */
+}
+
+.award-dnad::after{
+  content: "";
+  position: absolute;
+  left: 70%;                 /* pencil sits slightly to the right */
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.2em;              /* size relative to text/logo */
+  height: 2.2em;
+  background: url("../images/dnad-yellow-pencil.png") no-repeat center / contain;
+  z-index: 0;                /* behind the logo */
+  pointer-events: none;
+}
+
+/* make sure the actual logo stays above the pencil */
+.award-dnad .inline-logo{
+  position: relative;
+  z-index: 1;
+}
+
+
 .google-wordmark {
   transform: translateY(0.05em) scale(1.5);
 }
@@ -126,6 +151,16 @@ body {
   display: inline-block;
   margin-left: 1.65em;  /* increase/decrease until it clears the logo */
 }
+
+/* Award next to project title (project pages) */
+.project-title.award-dnad::after{
+  left: 105%;                /* push it to the right of the title text */
+  top: 55%;
+  width: 0.95em;             /* smaller than inline pencil */
+  height: 0.95em;
+  transform: translate(0, -50%);
+}
+
 
 /* Brand links */
 .brand-link {
