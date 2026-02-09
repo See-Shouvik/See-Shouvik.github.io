@@ -381,3 +381,72 @@ body {
   .project-support-grid{ grid-template-columns: 1fr; }
 }
 
+/* About page (new structure) */
+.about{
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 140px 24px 80px;
+}
+
+.about-hero{
+  margin-bottom: 34px;
+}
+
+.about-title{
+  font-size: 44px;
+  line-height: 1.05;
+}
+
+.about-bio p{
+  font-size: 20px;
+  line-height: 1.45;
+  margin-bottom: 18px;
+}
+
+.about-cols{
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
+  align-items: start;
+}
+
+.about-h2{
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.about-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.about-list li{
+  margin-bottom: 10px;
+}
+
+.about-links{
+  margin-top: 34px;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.about-footer{
+  margin-top: 34px;
+}
+
+/* Mobile */
+@media (max-width: 760px){
+  .about-cols{
+    grid-template-columns: 1fr;
+  }
+}
