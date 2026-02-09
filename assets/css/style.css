@@ -230,4 +230,154 @@ body {
 .work .hopper-wordmark{ top: 6px; }
 .work .philadelphia-mark{ top: 8px; }
 
+/* =========================
+   PROJECT PAGE (Robo Duck style)
+   ========================= */
+.project-page{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 140px 24px 80px;
+}
+
+/* hero */
+.project-hero{
+  margin-bottom: 34px;
+}
+
+.project-brand{
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.project-title{
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 56px;
+  letter-spacing: -0.04em;
+  line-height: 1.02;
+  margin-bottom: 16px;
+}
+
+.project-desc{
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 62ch;
+  color: #111;
+}
+
+/* blocks */
+.project-block{
+  margin-top: 42px;
+}
+
+.project-block-head{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.project-block-head h2{
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+.project-block-head p{
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #555;
+}
+
+/* media */
+.project-media img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+.project-media--video video{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+/* supporting grid */
+.project-support-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.project-card{
+  margin: 0;
+}
+
+.project-card img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+.project-card figcaption{
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* credits */
+.project-credits{
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid #eee;
+  display: grid;
+  gap: 10px;
+}
+
+.credits-line{
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.credits-label{
+  color: #666;
+}
+
+.credits-value{
+  color: #111;
+  font-weight: 600;
+}
+
+.project-back{
+  margin-top: 14px;
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: #111;
+  border-bottom: 1px solid transparent;
+  width: fit-content;
+}
+
+.project-back:hover{
+  border-bottom-color: #111;
+}
+
+/* responsive */
+@media (max-width: 820px){
+  .project-title{ font-size: 44px; }
+  .project-block-head{ flex-direction: column; align-items: flex-start; }
+  .project-support-grid{ grid-template-columns: 1fr; }
+}
 
