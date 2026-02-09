@@ -591,3 +591,48 @@ body {
   height: 2.0em;
 }
 
+/* ---------- Mobile header fix (prevents nav/name overlap) ---------- */
+@media (max-width: 640px) {
+  .top-bar {
+    height: auto;              /* allow header to grow */
+    padding: 14px 16px 10px;
+    flex-direction: column;    /* stack name + nav */
+    align-items: center;
+  }
+
+  .site-name {
+    position: static;          /* stop absolute overlap */
+    transform: none;
+    text-align: center;
+    font-size: 22px;           /* tweak if needed */
+    line-height: 1.1;
+    margin-bottom: 8px;
+    max-width: 100%;
+  }
+
+  /* If you have a "Copywriter" element inside site-name */
+  .site-name .site-role,
+  .site-role {
+    display: block;
+    margin-top: 6px;
+    font-size: 14px;
+    opacity: 0.65;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+
+  .nav-left {
+    margin-left: 0;            /* remove desktop offset */
+    justify-content: center;
+    flex-wrap: wrap;           /* allow Home/Work/About to wrap */
+    gap: 18px;
+  }
+
+  /* Because header is taller now and fixed, give pages more top padding */
+  .home,
+  .work,
+  .about,
+  .project-page {
+    padding-top: 170px;        /* tweak 160–190 if you want */
+  }
+}
