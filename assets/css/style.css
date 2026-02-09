@@ -147,7 +147,7 @@ body {
 .award-dnad-title::after{
   content: "";
   position: absolute;
-  right: 0.2em;         /* pulls it BACK toward the text */
+  right: 0em;         /* pulls it BACK toward the text */
   top: 50%;
   transform: translateY(-50%);
   width: 2.2em;         /* 🔥 THIS is the real size fix */
